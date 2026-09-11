@@ -100,7 +100,7 @@ def extract_dia_ids(system, record, dia_text_map, note_to_dia=None):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--anchor_dir", default="baselines/AnchorMem")
+    p.add_argument("--anchor_dir", default=".")
     p.add_argument("--seeds", default="43,44,45,46,47")
     p.add_argument("--top_k", type=int, default=10)
     p.add_argument("--styles", default="dialog,implicit,counterfactual")

@@ -25,7 +25,7 @@ from pydantic import ValidationError
 
 
 DEFAULT_MEMORA_SRC = "third_party/Memora/src"
-DEFAULT_DATA = "baselines/AnchorMem/data/locomo10.json"
+DEFAULT_DATA = "./data/locomo10.json"
 DEFAULT_ENDPOINT = (
     "http://localhost:8000/v1"
     "job-4780661c5641-20260703031902/proxy/5000/v1/chat/completions"
@@ -64,8 +64,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--endpoint", default=DEFAULT_ENDPOINT)
     parser.add_argument("--chat-model", default=DEFAULT_CHAT_MODEL)
     parser.add_argument("--embedding-model", default=DEFAULT_EMBED_MODEL)
-    parser.add_argument("--persist-path", default="baselines/AnchorMem/indices/memora_locomo10_local_index")
-    parser.add_argument("--output", default="baselines/AnchorMem/outputs_memora_locomo10_index_timing.json")
+    parser.add_argument("--persist-path", default="./indices/memora_locomo10_local_index")
+    parser.add_argument("--output", default="./outputs_memora_locomo10_index_timing.json")
     parser.add_argument("--limit-samples", type=int, default=0)
     parser.add_argument("--limit-sessions", type=int, default=0)
     parser.add_argument("--request-timeout", type=float, default=300.0)

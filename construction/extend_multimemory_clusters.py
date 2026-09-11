@@ -96,9 +96,9 @@ def compose_one_gpt5(client, model, sample, member_q_idxs, orig):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("--input", default="baselines/AnchorMem/data/locomo10.json")
+    p.add_argument("--input", default="./data/locomo10.json")
     p.add_argument("--existing", default="data/locomo10_multimem_full.json")
-    p.add_argument("--output_ext", default="baselines/AnchorMem/data/locomo10_multimem_ext.json")
+    p.add_argument("--output_ext", default="./data/locomo10_multimem_ext.json")
     p.add_argument("--output_full", default="data/locomo10_multimem_full.json")
     p.add_argument("--model", default="gpt-5.4-mini")
     p.add_argument("--concurrency", type=int, default=12)

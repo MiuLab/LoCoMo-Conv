@@ -78,9 +78,9 @@ def recompose(client, model, orig_mod, sample, cluster, forbidden):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--input", default="baselines/AnchorMem/data/locomo10_multimem_ext.json")
-    ap.add_argument("--locomo", default="baselines/AnchorMem/data/locomo10.json")
-    ap.add_argument("--output", default="baselines/AnchorMem/data/locomo10_multimem_ext.json")
+    ap.add_argument("--input", default="./data/locomo10_multimem_ext.json")
+    ap.add_argument("--locomo", default="./data/locomo10.json")
+    ap.add_argument("--output", default="./data/locomo10_multimem_ext.json")
     ap.add_argument("--model", default="gpt-5.4-mini")
     ap.add_argument("--threshold", type=float, default=0.10)
     ap.add_argument("--rounds", type=int, default=3)

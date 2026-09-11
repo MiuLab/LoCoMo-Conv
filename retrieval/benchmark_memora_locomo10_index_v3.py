@@ -20,7 +20,7 @@ from typing import Any, List
 import requests
 
 DEFAULT_MEMORA_SRC = "third_party/Memora/src"
-DEFAULT_DATA = "baselines/AnchorMem/data/locomo10.json"
+DEFAULT_DATA = "./data/locomo10.json"
 DEFAULT_ENDPOINT = (
     "http://localhost:8000/v1"
     "job-4780661c5641-20260703031902/proxy/5000/v1/chat/completions"
@@ -50,8 +50,8 @@ def parse_args():
     ap.add_argument("--endpoint", default=DEFAULT_ENDPOINT)
     ap.add_argument("--chat-model", default=DEFAULT_CHAT_MODEL)
     ap.add_argument("--embedding-model", default=DEFAULT_EMBED_MODEL)
-    ap.add_argument("--persist-path", default="baselines/AnchorMem/indices/memora_locomo10_v3_index")
-    ap.add_argument("--output", default="baselines/AnchorMem/outputs_memora_locomo10_v3_index_timing.json")
+    ap.add_argument("--persist-path", default="./indices/memora_locomo10_v3_index")
+    ap.add_argument("--output", default="./outputs_memora_locomo10_v3_index_timing.json")
     ap.add_argument("--limit-samples", type=int, default=0)
     ap.add_argument("--skip-samples", default="",
                     help="Comma-separated sample_ids to skip entirely (resume after a crash). "

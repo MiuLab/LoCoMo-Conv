@@ -9,7 +9,7 @@
 #
 # AnchorMem is launched separately (needs its own retrieval path via main.py).
 #
-# Usage: bash baselines/AnchorMem/scripts/blockB_conv_retrieval.sh
+# Usage: bash retrieval/blockB_conv_retrieval.sh
 
 set -u
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

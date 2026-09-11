@@ -14,12 +14,13 @@ import json, os, sys
 from collections import defaultdict
 import statistics as st
 
-sys.path.insert(0, 'baselines/AnchorMem/scripts')
+for _d in ('retrieval','response_eval','analysis','construction'):
+    sys.path.insert(0, _d)
 from bucket_recall_vs_fact import (
     build_dia_id_text_map, extract_dia_ids, load_amem_note_to_dia,
 )
 
-ANCHOR = 'baselines/AnchorMem'
+ANCHOR = '.'
 SEEDS = [43, 44, 45]
 
 # Retrieval file layouts per system (Block B seeded)

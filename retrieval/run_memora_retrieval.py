@@ -1,6 +1,6 @@
 """Run memora retrieval over LoCoMo10 queries and compute session-level dia_id recall.
 
-Uses the pre-built memora chroma index at baselines/AnchorMem/indices/memora_locomo10_local_index.
+Uses the pre-built memora chroma index at ./indices/memora_locomo10_local_index.
 Each memora memory carries a `timestamp` metadata field (session date_time). Within
 a sample_id, session timestamps are unique, so we can map retrieved memories to
 session-level dia_ids via a LoCoMo timestamp lookup.
@@ -53,11 +53,11 @@ FIELD_FOR_STYLE = {
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--memora_src", default="third_party/Memora/src")
-    ap.add_argument("--persist_path", default="baselines/AnchorMem/indices/memora_locomo10_local_index")
-    ap.add_argument("--dataset_path", default="baselines/AnchorMem/data/locomo10.json")
-    ap.add_argument("--dialog_data_path", default="baselines/AnchorMem/data/locomo10_dialog.json")
+    ap.add_argument("--persist_path", default="./indices/memora_locomo10_local_index")
+    ap.add_argument("--dataset_path", default="./data/locomo10.json")
+    ap.add_argument("--dialog_data_path", default="./data/locomo10_dialog.json")
     ap.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
-    ap.add_argument("--output_dir", default="baselines/AnchorMem/outputs_memora/locomo-gemma-4-31B-it")
+    ap.add_argument("--output_dir", default="./outputs_memora/locomo-gemma-4-31B-it")
     ap.add_argument("--top_k", type=int, default=10)
     ap.add_argument("--styles", default="question,dialog,implicit,counterfactual,composed")
     ap.add_argument("--samples", default="all")

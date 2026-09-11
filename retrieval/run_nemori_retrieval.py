@@ -32,11 +32,11 @@ FIELD_FOR_STYLE = {
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--stores_path", default="baselines/AnchorMem/outputs_nemori_locomo10_v2_index_timing_stores.json")
-    ap.add_argument("--dataset_path", default="baselines/AnchorMem/data/locomo10.json")
-    ap.add_argument("--dialog_data_path", default="baselines/AnchorMem/data/locomo10_dialog.json")
+    ap.add_argument("--stores_path", default="./outputs_nemori_locomo10_v2_index_timing_stores.json")
+    ap.add_argument("--dataset_path", default="./data/locomo10.json")
+    ap.add_argument("--dialog_data_path", default="./data/locomo10_dialog.json")
     ap.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
-    ap.add_argument("--output_dir", default="baselines/AnchorMem/outputs_nemori/locomo-gemma-4-31B-it")
+    ap.add_argument("--output_dir", default="./outputs_nemori/locomo-gemma-4-31B-it")
     ap.add_argument("--embed_model", default="sentence-transformers/all-MiniLM-L6-v2")
     ap.add_argument("--top_k_episodes", type=int, default=10)
     ap.add_argument("--top_k_semantic", type=int, default=20)

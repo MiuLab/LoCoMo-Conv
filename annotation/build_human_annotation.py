@@ -18,7 +18,7 @@ faithfulness, relevance, engagement (columns provided empty in the CSV).
 import csv, json, os, random
 from collections import defaultdict
 
-ANCHOR = 'baselines/AnchorMem'
+ANCHOR = '.'
 RE = f'{ANCHOR}/outputs_response_eval'
 OUT = f'{ANCHOR}/rebuttal/human_annotation'
 os.makedirs(OUT, exist_ok=True)

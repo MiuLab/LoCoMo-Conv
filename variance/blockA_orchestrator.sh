@@ -9,7 +9,7 @@
 #   ./blockA_orchestrator.sh <seed> [temperature] [concurrency]
 #
 # Example:
-#   bash baselines/AnchorMem/scripts/blockA_orchestrator.sh 43
+#   bash retrieval/blockA_orchestrator.sh 43
 
 set -u
 

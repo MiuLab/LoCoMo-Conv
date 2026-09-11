@@ -3,7 +3,7 @@
 # Runs response gen for seeds 43..47, then scores fact_used_partial for each.
 #
 # Usage:
-#   bash baselines/AnchorMem/scripts/blockA_full_5seed.sh [start_seed] [n_seeds]
+#   bash retrieval/blockA_full_5seed.sh [start_seed] [n_seeds]
 #
 # Default: seeds 43, 44, 45, 46, 47.
 

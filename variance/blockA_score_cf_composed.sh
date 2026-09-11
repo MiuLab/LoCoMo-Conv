@@ -2,7 +2,7 @@
 # Score counterfactual (3-way) and composed (atomic) for each Block A seed.
 # Reuses the responses.json produced by blockA_orchestrator.sh.
 #
-# Usage: bash baselines/AnchorMem/scripts/blockA_score_cf_composed.sh
+# Usage: bash retrieval/blockA_score_cf_composed.sh
 
 set -u
 
