@@ -1,7 +1,6 @@
 # LoCoMo-Conv
 
-Code and data for **"When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in
-Conversational Agents"** (LoCoMo-Conv).
+<img width="360" alt="image" src="https://github.com/user-attachments/assets/5c7ab5c0-0611-4e20-b411-bd31df4f2593" />
 
 LoCoMo-Conv recasts the LoCoMo QA pool into four conversational query styles — **dialog**,
 **implicit**, **counterfactual**, and **composed** — while keeping the original gold answers
@@ -79,14 +78,11 @@ python response_eval/score_composed_atomic.py --responses_path <dir>/responses.j
 ## Citation
 
 ```bibtex
-@misc{chang2026usersdontaskbenchmarking,
+@inproceedings{chang2026when,
       title={When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents},
       author={Wen-Yu Chang and Yun-Nung Chen},
-      year={2026},
-      eprint={2609.03467},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2609.03467},
+      booktitle={Findings of the Association for Computational Linguistics: EMNLP 2026},
+      year={2026}
 }
 ```
 
