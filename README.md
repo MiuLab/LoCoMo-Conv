@@ -15,7 +15,6 @@ free-form response quality.
 | `data/locomo10.json` | Original LoCoMo10 conversations (Maharana et al., 2024) |
 | `data/locomo10_dialog.json` | LoCoMo-Conv: per-QA conversational rewrites (`dialog_query`, `implicit_query`, `counterfactual_query`, `expected_memory_use`, `supportive_memory`) |
 | `data/locomo10_multimem_full.json` | 1,069 composed multi-memory clusters (two source QAs each) |
-| `data/locomo10_multimem.json` | The original 300-cluster subset |
 | `data/response_eval_full_ext.json` | Full evaluation job list (all styles + 1,069 composed) |
 
 ## Repository layout
