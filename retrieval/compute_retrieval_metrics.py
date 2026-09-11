@@ -19,7 +19,7 @@ Output:
 
 Note: For Styles 1/2/4 the "gold dia_ids" per query is the original locomo
 evidence list. For Style 5 (composed) the gold dia_ids is the union of the
-cluster members' evidence (in data/locomo10_multimem.json).
+cluster members' evidence (in data/locomo10_multimem_full.json).
 """
 from __future__ import annotations
 
@@ -129,7 +129,7 @@ def prf(retrieved: Set[str], gold: Set[str]) -> Tuple[float, float, float]:
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--results_dir", default="outputs/locomo-gemma-4-31B-it")
     p.add_argument("--styles", default="question,dialog,implicit,counterfactual,composed")
     p.add_argument("--out", default=None)

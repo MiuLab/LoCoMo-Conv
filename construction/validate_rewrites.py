@@ -20,7 +20,7 @@ Usage:
   python scripts/validate_rewrites.py \
       --input data/locomo10_dialog.json \
       --output data/locomo10_dialog_validated.json \
-      --multimem_input data/locomo10_multimem.json \
+      --multimem_input data/locomo10_multimem_full.json \
       --multimem_output data/locomo10_multimem_validated.json \
       --judge_base_url <qwen> --judge_model qwen3.6-35b-a3b \
       --concurrency 2 \
@@ -260,7 +260,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--input", default="data/locomo10_dialog.json")
     p.add_argument("--output", default="data/locomo10_dialog_validated.json")
-    p.add_argument("--multimem_input", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_input", default="data/locomo10_multimem_full.json")
     p.add_argument("--multimem_output", default="data/locomo10_multimem_validated.json")
     p.add_argument("--judge_base_url", default=os.environ.get(
         "JUDGE_BASE_URL",

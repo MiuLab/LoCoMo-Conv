@@ -120,7 +120,7 @@ def select_qas_in_main_order(sample_qa: List[Dict[str, Any]], query_field: str) 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--save_dir", default="outputs_bm25/locomo-bm25")
     p.add_argument("--styles", default="question,dialog,implicit,counterfactual,composed")
     p.add_argument("--top_k", type=int, default=10)

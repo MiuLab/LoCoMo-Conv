@@ -349,7 +349,7 @@ def run_sample(memory: Memory, sample: Dict[str, Any], sample_idx: int,
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--llm_base_url", default=os.environ.get(
         "LLM_BASE_URL",
         "http://localhost:8000/v1",

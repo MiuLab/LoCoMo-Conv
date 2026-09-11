@@ -52,7 +52,7 @@ def retrieved_dia_ids(docs, id_to_text, retrieved_metadata=None):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--top_k", type=int, required=True, help="Truncate retrieved docs to top-K before scoring")
     p.add_argument("--styles", default="dialog,implicit,counterfactual,composed")
     args = p.parse_args()

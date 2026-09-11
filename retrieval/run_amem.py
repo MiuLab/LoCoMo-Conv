@@ -279,7 +279,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
     p.add_argument("--locomo_path", default="data/locomo10.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--llm_model", default="./gemma-4-31B-it")
     p.add_argument("--embedding_model", default="all-MiniLM-L6-v2")
     p.add_argument("--evo_threshold", type=int, default=10000,

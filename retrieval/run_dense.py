@@ -72,7 +72,7 @@ def cosine_topk(query_vec: np.ndarray, doc_vecs: np.ndarray, k: int) -> List[int
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--save_dir", default="outputs_dense/locomo-dense")
     p.add_argument("--styles", default="dialog,implicit,counterfactual,composed")
     p.add_argument("--top_k", type=int, default=20)

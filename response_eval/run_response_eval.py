@@ -376,7 +376,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--sample_path", default="data/response_eval_sample.json")
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--variants", default="all_memory,top_k,compressed,oracle,reasoning_rewrite",
                    help="comma-separated subset of variants to run")
     p.add_argument("--styles", default="dialog,implicit,counterfactual,composed")

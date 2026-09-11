@@ -1,6 +1,6 @@
 """Run AnchorMem retrieval on Style-5 composed (multi-memory) queries.
 
-Reads data/locomo10_multimem.json (300 clusters across 10 samples) and runs
+Reads data/locomo10_multimem_full.json (composed clusters across 10 samples) and runs
 each cluster's composed_query through AnchorMem retrieval (reusing the indexing
 cache built by main.py). Outputs:
   outputs/locomo-<llm>/sample_<i>/composed_solutions.json
@@ -53,7 +53,7 @@ def _to_str(x: Any) -> str:
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--locomo_path", default="data/locomo10.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--llm_base_url",
                    default="http://localhost:8000/v1")
     p.add_argument("--llm_name", default="./gemma-4-31B-it")

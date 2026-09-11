@@ -21,7 +21,7 @@ def has_style_query(qa: Dict[str, Any], style: str) -> bool:
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--output", default="data/response_eval_sample.json")
     p.add_argument("--n_per_style", type=int, default=300)
     p.add_argument("--seed", type=int, default=42)

@@ -78,7 +78,7 @@ def judge_one(client, model: str, query: str, facts: List[str], response: str) -
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--responses_path", default="outputs_response_eval/full_convergent/responses.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--output", default="outputs_response_eval/full_convergent/composed_atomic.json")
     p.add_argument("--judge_model", default="gpt-5.4-mini")
     p.add_argument("--variants", default="oracle,top_k,compressed,reasoning_rewrite",

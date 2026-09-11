@@ -40,7 +40,7 @@ def main():
     p.add_argument("--rewrite_retrievals", required=True,
                    help="path to rewrite_retrievals.json")
     p.add_argument("--dataset_path", default="data/locomo10_dialog.json")
-    p.add_argument("--multimem_path", default="data/locomo10_multimem.json")
+    p.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     p.add_argument("--top_k", type=int, default=10, help="recall@K")
     p.add_argument("--restrict_to_sample", default=None,
                    help="optional path to response_eval_sample.json; if given, only include those (style, sample_idx, q_id) tuples in the metric")

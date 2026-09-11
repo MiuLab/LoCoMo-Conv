@@ -2,7 +2,7 @@
 
 - Discovers ALL valid clusters (same constraints as the original build:
   cat 1-4, evidence overlap >=1, not identical, union >= 2).
-- Skips clusters already present in data/locomo10_multimem.json (matched by
+- Skips clusters already present in data/locomo10_multimem_full.json (matched by
   (sample_idx, sorted member_q_idxs)) — the original 300 stay untouched.
 - Composes queries for the new clusters with gpt-5.4-mini (same CLUSTER_PROMPT).
 - New cluster_ids continue per-sample numbering after the existing ones.
@@ -97,9 +97,9 @@ def compose_one_gpt5(client, model, sample, member_q_idxs, orig):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--input", default="baselines/AnchorMem/data/locomo10.json")
-    p.add_argument("--existing", default="baselines/AnchorMem/data/locomo10_multimem.json")
+    p.add_argument("--existing", default="data/locomo10_multimem_full.json")
     p.add_argument("--output_ext", default="baselines/AnchorMem/data/locomo10_multimem_ext.json")
-    p.add_argument("--output_full", default="baselines/AnchorMem/data/locomo10_multimem_full.json")
+    p.add_argument("--output_full", default="data/locomo10_multimem_full.json")
     p.add_argument("--model", default="gpt-5.4-mini")
     p.add_argument("--concurrency", type=int, default=12)
     p.add_argument("--limit", type=int, default=0, help="cap NEW clusters (0 = all) for smoke tests")

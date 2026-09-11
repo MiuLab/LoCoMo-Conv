@@ -8,7 +8,7 @@ memories should retrieve all of them.
 Then use an LLM to compose a single first-person utterance that requires the
 union of memories to answer well.
 
-Output: data/locomo10_multimem.json
+Output: data/locomo10_multimem_full.json
   [
     {
       "sample_idx": int,
@@ -30,7 +30,7 @@ Output: data/locomo10_multimem.json
 Usage:
   python scripts/build_multimemory_clusters.py \
       --input data/locomo10.json \
-      --output data/locomo10_multimem.json \
+      --output data/locomo10_multimem_full.json \
       --base_url <vllm> --model <name> \
       --cluster_size 2 --max_per_sample 30
 """
@@ -199,7 +199,7 @@ def compose_one(
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--input", default="data/locomo10.json")
-    p.add_argument("--output", default="data/locomo10_multimem.json")
+    p.add_argument("--output", default="data/locomo10_multimem_full.json")
     p.add_argument("--base_url", default=os.environ.get(
         "LLM_BASE_URL",
         "http://localhost:8000/v1",

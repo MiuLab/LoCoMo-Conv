@@ -56,7 +56,7 @@ def main():
     ap.add_argument("--persist_path", default="baselines/AnchorMem/indices/memora_locomo10_local_index")
     ap.add_argument("--dataset_path", default="baselines/AnchorMem/data/locomo10.json")
     ap.add_argument("--dialog_data_path", default="baselines/AnchorMem/data/locomo10_dialog.json")
-    ap.add_argument("--multimem_path", default="baselines/AnchorMem/data/locomo10_multimem.json")
+    ap.add_argument("--multimem_path", default="data/locomo10_multimem_full.json")
     ap.add_argument("--output_dir", default="baselines/AnchorMem/outputs_memora/locomo-gemma-4-31B-it")
     ap.add_argument("--top_k", type=int, default=10)
     ap.add_argument("--styles", default="question,dialog,implicit,counterfactual,composed")

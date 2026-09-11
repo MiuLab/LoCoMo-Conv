@@ -73,7 +73,7 @@ def _compute_rewrite_recall(rr_path):
     """Inline recall@10 calc — same logic as compute_rewrite_recall.py."""
     from collections import defaultdict
     data = load_or_none('data/locomo10_dialog.json')
-    mm = load_or_none('data/locomo10_multimem.json') or []
+    mm = load_or_none('data/locomo10_multimem_full.json') or []
     if not data: return {}
 
     sample_maps = {}
