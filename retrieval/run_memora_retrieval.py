@@ -87,7 +87,7 @@ def main():
 
     # Reuse v1's patches for llm + embedding (so no external OPENAI_API_KEY needed).
     import importlib.util
-    v1_path = Path(__file__).parent.parent.parent.parent / "scripts" / "benchmark_memora_locomo10_index.py"
+    v1_path = Path(__file__).parent / "benchmark_memora_locomo10_index.py"
     spec = importlib.util.spec_from_file_location("bench_memora_v1", v1_path)
     v1 = importlib.util.module_from_spec(spec)
     sys.modules["bench_memora_v1"] = v1
