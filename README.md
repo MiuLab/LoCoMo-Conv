@@ -76,6 +76,20 @@ python response_eval/score_composed_atomic.py --responses_path <dir>/responses.j
   --multimem_path data/locomo10_multimem_full.json --output <dir>/composed_atomic.json
 ```
 
+## Citation
+
+```bibtex
+@misc{chang2026usersdontaskbenchmarking,
+      title={When Users Don't Ask: Benchmarking Context-Driven Memory Retrieval in Conversational Agents},
+      author={Wen-Yu Chang and Yun-Nung Chen},
+      year={2026},
+      eprint={2609.03467},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.03467},
+}
+```
+
 ## License / attribution
 
 The underlying conversations and QA annotations come from
